@@ -70,6 +70,7 @@ class PoseClientPublisher {
             cartesian_pose_simple_msg.y = getPose_srv.response.y;
             cartesian_pose_simple_msg.z = getPose_srv.response.z;
             cartesian_pose_simple_msg.r = getPose_srv.response.r;
+			cartesian_pose_simple_pub.publish(cartesian_pose_simple_msg);
 
 
             //  Publish the message using the appropriate publisher
@@ -80,6 +81,8 @@ class PoseClientPublisher {
 			joint_state_msg.name[1]="J1"; joint_state_msg.position[1]= deg_to_rad(getPose_srv.response.jointAngle[1]);
 			joint_state_msg.name[2]="J1"; joint_state_msg.position[2]= deg_to_rad(getPose_srv.response.jointAngle[2]);
 			joint_state_msg.name[3]="J1"; joint_state_msg.position[3]= deg_to_rad(getPose_srv.response.jointAngle[3]);
+			
+			joint_angle_pub.publish(joint_state_msg);
 
 			//quat
 			quat_state_msg.position.x = getPose_srv.response.x;
@@ -99,6 +102,8 @@ class PoseClientPublisher {
 			quat_state_msg.orientation.x = sr * cp * cy - cr * sp * sy;
 			quat_state_msg.orientation.y = cr * sp * cy + sr * cp * sy;
 			quat_state_msg.orientation.z = cr * cp * sy - sr * sp * cy;
+
+			quat_pub.publish(quat_state_msg);
         }
 
         //  Converts an angle from degrees to radians
