@@ -1,5 +1,5 @@
 /** Do Milestone 8.5 First before going into this**/
-
+/**IDK if you need to include dobot/PTPCommand.h**/
 #include "ros/ros.h"
 #include "dobot/CartesianSimple.h"
 #include <cmath>
@@ -8,16 +8,16 @@ class PTPCommandClient{
 		ros::ServiceClient SetPTP_Client;
 		ros::SetPTPCmd ptp;
 		ros::Subscriber ptp_subs;
-		ros::Publisher ptp_pubs;
-		dobot::
 	public:
 		PTPCommandClient(ros::NodeHandle &nh){
 			SetPTP_Client = nh->serviceClient<dobot::SetPTPCmd>("/DobotServer/SetPTPCmd");
-			ptp_subs = nh->subscribe("/dobot/ptp_commands",1000,ptpCallBack);
+			ptp_subs = nh->subscribe("/dobot/ptp_commands",10,&PTPCommandClient::callback_ptp,this);
+
+		void callback_ptp(const dobot::PTPCommand& msg)
+		{
+		}
 
 }
-
-		
 
 			
 }
@@ -46,6 +46,8 @@ int main(int argc, char ** argv)
 	else{
 	ROS_ERROR("PTP_Command: Unable to connect to SetPTPCmd servce");
 	ros::requestShutdown();
+	}
+	return 0;
 
 }
 
