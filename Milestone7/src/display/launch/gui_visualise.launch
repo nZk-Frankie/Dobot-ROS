@@ -1,0 +1,40 @@
+<launch>
+
+  <param
+    name="robot_description"
+    textfile="$(find display)/urdf/dobot.urdf" />
+
+  <param
+    name="robot_visuals_description"
+    textfile="$(find display)/urdf/dobot_visuals.urdf" />
+
+  <node
+    name="joint_state_publisher_gui"
+    pkg="joint_state_publisher_gui"
+    type="joint_state_publisher_gui" >
+  </node>
+
+  <node
+    name="joint_visuals_converter"
+    pkg="display"
+    type="JointVisualsConverter"
+    args="/joint_states /visuals_joint_states"
+    output="screen" />
+
+  <node
+    name="robot_state_publisher"
+    pkg="robot_state_publisher"
+    type="robot_state_publisher" >
+    <remap from="robot_description" to="robot_visuals_description" />
+    <remap from="/joint_states" to="/visuals_joint_states" />
+  </node>
+
+  <node
+    name="rviz"
+    pkg="rviz"
+    type="rviz"
+    args="-d $(find display)/config/dobot.rviz" >
+    <remap from="robot_description" to="robot_visuals_description" />
+  </node>
+
+</launch>

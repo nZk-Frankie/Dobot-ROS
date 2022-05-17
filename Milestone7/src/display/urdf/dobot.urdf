@@ -1,0 +1,69 @@
+<robot name="magician">
+
+
+    <link name="base_link">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+        </visual>
+    </link>
+
+    <joint name="joint_1" type ="revolute">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <parent link="base_link"/>
+        <child link="link_1"/>
+        <axis xyz="0 0 1"/>
+        <limit effort="150.0" lower="-3.14159265" upper="3.14159265" velocity="3.15"/>
+    </joint>
+
+    <link name="link_1"/>
+
+    
+    <joint name="joint_2" type="revolute">
+        <origin xyz="0 0 0" rpy="-1.570796325 -1.570796325 0"/>
+        <parent link="link_1"/>
+        <child link="link_2"/>
+        <axis xyz="0 0 1"/>
+        <limit effort="150.0" lower="-0.087266" upper="1.570796325" velocity="3.15"/>
+    </joint>
+
+    <link name="link_2"/>
+
+    <joint name="joint_3" type ="revolute">
+        <origin xyz="0.135 0 0" rpy="0 0 1.570796325"/>
+        <parent link="link_2"/>
+        <child link="link_3"/>
+        <axis xyz="0 0 1"/>
+        <limit effort="150.0" lower="-1.570796325" upper="1.570796325" velocity="3.15"/>
+    </joint>
+
+    <link name="link_3"/>
+
+
+    <joint name="stable_joint" type ="fixed">
+        <origin xyz="0.147 0 0.0" rpy="0 0 0"/>
+        <parent link="link_3"/>
+        <child link="link_mount"/>
+        <axis xyz="0 0 1"/>
+        <limit effort="150.0" lower="-3.14159265" upper="3.14159265" velocity="3.15"/>
+
+    </joint>
+
+    <link name="link_mount">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+        </visual>
+    </link>
+
+    <joint name="joint_4" type ="revolute">
+        <origin xyz="0.0597 0 0.0" rpy="1.570796325 0 0"/>
+        <parent link="link_mount"/>
+        <child link="link_4"/>
+        <axis xyz="0 0 1"/>
+        <limit effort="150.0" lower="-3.14159265" upper="3.14159265" velocity="3.15"/>
+
+    </joint>
+
+    <link name="link_4"/>
+    
+
+</robot>  
