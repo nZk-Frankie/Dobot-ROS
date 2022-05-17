@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "${prefix}/include".split(';') if "${prefix}/i
 PROJECT_CATKIN_DEPENDS = "roscpp;rospy;std_msgs;message_runtime;geometry_msgs".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "dobot"
-PROJECT_SPACE_DIR = "/home/melodic/Desktop/Dobot ROS Files/Milestone7/install"
+PROJECT_SPACE_DIR = "/home/choc/Desktop/Dobot ROS Files/Milestone7/install"
 PROJECT_VERSION = "0.0.0"

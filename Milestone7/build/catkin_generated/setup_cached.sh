@@ -7,7 +7,7 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/melodic/Desktop/Dobot ROS Files/Milestone7/devel:$CMAKE_PREFIX_PATH"
-export PWD='/home/melodic/Desktop/Dobot ROS Files/Milestone7/build'
-export ROSLISP_PACKAGE_DIRECTORIES="/home/melodic/Desktop/Dobot ROS Files/Milestone7/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/melodic/Desktop/Dobot ROS Files/Milestone7/src:$ROS_PACKAGE_PATH"
+export CMAKE_PREFIX_PATH="/home/choc/Desktop/Dobot ROS Files/Milestone7/devel:$CMAKE_PREFIX_PATH"
+export PWD='/home/choc/Desktop/Dobot ROS Files/Milestone7/build'
+export ROSLISP_PACKAGE_DIRECTORIES='/home/choc/Desktop/Dobot ROS Files/Milestone7/devel/share/common-lisp'
+export ROS_PACKAGE_PATH="/home/choc/Desktop/Dobot ROS Files/Milestone7/src:$ROS_PACKAGE_PATH"

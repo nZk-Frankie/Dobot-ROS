@@ -1,8 +1,8 @@
-prefix=/home/melodic/Desktop/Dobot ROS Files/Milestone7/devel
+prefix=/home/choc/Desktop/Dobot ROS Files/Milestone7/devel
 
 Name: dobot
 Description: Description of dobot
 Version: 0.0.0
-Cflags: -I/home/melodic/Desktop/Dobot ROS Files/Milestone7/devel/include
+Cflags: -I/home/choc/Desktop/Dobot ROS Files/Milestone7/devel/include
 Libs: -L${prefix}/lib 
 Requires: roscpp rospy std_msgs message_runtime geometry_msgs

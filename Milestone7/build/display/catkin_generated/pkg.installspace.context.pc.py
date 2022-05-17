@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "display"
-PROJECT_SPACE_DIR = "/home/melodic/Desktop/Dobot ROS Files/Milestone7/install"
+PROJECT_SPACE_DIR = "/home/choc/Desktop/Dobot ROS Files/Milestone7/install"
 PROJECT_VERSION = "0.0.0"

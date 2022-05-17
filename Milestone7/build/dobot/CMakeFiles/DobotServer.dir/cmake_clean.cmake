@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/DobotServer.dir/src/DobotServer.cpp.o"
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/devel/lib/dobot/DobotServer.pdb"
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/devel/lib/dobot/DobotServer"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/devel/lib/dobot/DobotServer.pdb"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/devel/lib/dobot/DobotServer"
 )
 
 # Per-language clean rules from dependency scanning.

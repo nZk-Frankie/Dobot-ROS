@@ -2,7 +2,7 @@
 
 message(STATUS "dobot: 1 messages, 60 services")
 
-set(MSG_I_FLAGS "-Idobot:/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/msg;-Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg")
+set(MSG_I_FLAGS "-Idobot:/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/msg;-Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -17,309 +17,309 @@ add_custom_target(dobot_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPJumpParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorParams.srv" NAME_WE)
 add_custom_target(_dobot_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPJumpParams.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorParams.srv" ""
 )
 
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOPWM.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorSuctionCup.srv" NAME_WE)
 add_custom_target(_dobot_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOPWM.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorSuctionCup.srv" ""
 )
 
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorGripper.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/ClearAllAlarmsState.srv" NAME_WE)
 add_custom_target(_dobot_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorGripper.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/ClearAllAlarmsState.srv" ""
 )
 
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetCPParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorSuctionCup.srv" NAME_WE)
 add_custom_target(_dobot_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetCPParams.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorSuctionCup.srv" ""
 )
 
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/ClearAllAlarmsState.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetWAITCmd.srv" NAME_WE)
 add_custom_target(_dobot_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/ClearAllAlarmsState.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetWAITCmd.srv" ""
 )
 
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPCoordinateParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceName.srv" NAME_WE)
 add_custom_target(_dobot_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPCoordinateParams.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceName.srv" "std_msgs/String"
 )
 
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIOPWM.srv" NAME_WE)
 add_custom_target(_dobot_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorParams.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIOPWM.srv" ""
 )
 
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceVersion.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOADC.srv" NAME_WE)
 add_custom_target(_dobot_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceVersion.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOADC.srv" ""
 )
 
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPJumpParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdForceStopExec.srv" NAME_WE)
 add_custom_target(_dobot_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPJumpParams.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdForceStopExec.srv" ""
 )
 
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorSuctionCup.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorGripper.srv" NAME_WE)
 add_custom_target(_dobot_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorSuctionCup.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorGripper.srv" ""
 )
 
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCommonParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGCommonParams.srv" NAME_WE)
 add_custom_target(_dobot_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCommonParams.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGCommonParams.srv" ""
 )
 
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorLaser.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCommonParams.srv" NAME_WE)
 add_custom_target(_dobot_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorLaser.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCommonParams.srv" ""
 )
 
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetInfraredSensor.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetARCCmd.srv" NAME_WE)
 add_custom_target(_dobot_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetInfraredSensor.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetARCCmd.srv" ""
 )
 
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetARCCmd.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorParams.srv" NAME_WE)
 add_custom_target(_dobot_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetARCCmd.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorParams.srv" ""
 )
 
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceName.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPose.srv" NAME_WE)
 add_custom_target(_dobot_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceName.srv" "std_msgs/String"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPose.srv" ""
 )
 
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCoordinateParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGJointParams.srv" NAME_WE)
 add_custom_target(_dobot_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCoordinateParams.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGJointParams.srv" ""
 )
 
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCmd.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPJumpParams.srv" NAME_WE)
 add_custom_target(_dobot_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCmd.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPJumpParams.srv" ""
 )
 
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCommonParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEMotor.srv" NAME_WE)
 add_custom_target(_dobot_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCommonParams.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEMotor.srv" ""
 )
 
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetARCParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorGripper.srv" NAME_WE)
 add_custom_target(_dobot_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetARCParams.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorGripper.srv" ""
 )
 
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorSuctionCup.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetCPParams.srv" NAME_WE)
 add_custom_target(_dobot_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorSuctionCup.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetCPParams.srv" ""
 )
 
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCoordinateParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCPCmd.srv" NAME_WE)
 add_custom_target(_dobot_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCoordinateParams.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCPCmd.srv" ""
 )
 
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCmd.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetColorSensor.srv" NAME_WE)
 add_custom_target(_dobot_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCmd.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetColorSensor.srv" ""
 )
 
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOADC.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCommonParams.srv" NAME_WE)
 add_custom_target(_dobot_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOADC.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCommonParams.srv" ""
 )
 
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdStopExec.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceVersion.srv" NAME_WE)
 add_custom_target(_dobot_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdStopExec.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceVersion.srv" ""
 )
 
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPJointParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPJointParams.srv" NAME_WE)
 add_custom_target(_dobot_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPJointParams.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPJointParams.srv" ""
 )
 
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPose.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetHOMECmd.srv" NAME_WE)
 add_custom_target(_dobot_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPose.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetHOMECmd.srv" ""
 )
 
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetColorSensor.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorLaser.srv" NAME_WE)
 add_custom_target(_dobot_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetColorSensor.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorLaser.srv" ""
 )
 
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPCommonParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetARCParams.srv" NAME_WE)
 add_custom_target(_dobot_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPCommonParams.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetARCParams.srv" ""
 )
 
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIOMultiplexing.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdStopExec.srv" NAME_WE)
 add_custom_target(_dobot_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIOMultiplexing.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdStopExec.srv" ""
 )
 
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetHOMEParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCmd.srv" NAME_WE)
 add_custom_target(_dobot_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetHOMEParams.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCmd.srv" ""
 )
 
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPJumpParams.srv" NAME_WE)
 add_custom_target(_dobot_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorParams.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPJumpParams.srv" ""
 )
 
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdForceStopExec.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetHOMEParams.srv" NAME_WE)
 add_custom_target(_dobot_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdForceStopExec.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetHOMEParams.srv" ""
 )
 
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorGripper.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPJointParams.srv" NAME_WE)
 add_custom_target(_dobot_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorGripper.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPJointParams.srv" ""
 )
 
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGJointParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPCoordinateParams.srv" NAME_WE)
 add_custom_target(_dobot_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGJointParams.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPCoordinateParams.srv" ""
 )
 
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCmdTimeout.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIODO.srv" NAME_WE)
 add_custom_target(_dobot_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCmdTimeout.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIODO.srv" ""
 )
 
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetHOMECmd.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGJointParams.srv" NAME_WE)
 add_custom_target(_dobot_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetHOMECmd.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGJointParams.srv" ""
 )
 
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdStartExec.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCoordinateParams.srv" NAME_WE)
 add_custom_target(_dobot_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdStartExec.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCoordinateParams.srv" ""
 )
 
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIODI.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetTRIGCmd.srv" NAME_WE)
 add_custom_target(_dobot_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIODI.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetTRIGCmd.srv" ""
 )
 
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIODO.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorLaser.srv" NAME_WE)
 add_custom_target(_dobot_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIODO.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorLaser.srv" ""
 )
 
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetARCParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetDeviceName.srv" NAME_WE)
 add_custom_target(_dobot_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetARCParams.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetDeviceName.srv" "std_msgs/String"
 )
 
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorLaser.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdClear.srv" NAME_WE)
 add_custom_target(_dobot_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorLaser.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdClear.srv" ""
 )
 
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetAlarmsState.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceSN.srv" NAME_WE)
 add_custom_target(_dobot_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetAlarmsState.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceSN.srv" "std_msgs/String"
 )
 
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEMotor.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/msg/CartesianSimple.msg" NAME_WE)
 add_custom_target(_dobot_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEMotor.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/msg/CartesianSimple.msg" ""
 )
 
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdClear.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCPParams.srv" NAME_WE)
 add_custom_target(_dobot_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdClear.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCPParams.srv" ""
 )
 
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPJointParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetAlarmsState.srv" NAME_WE)
 add_custom_target(_dobot_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPJointParams.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetAlarmsState.srv" ""
 )
 
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetDeviceName.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetHOMEParams.srv" NAME_WE)
 add_custom_target(_dobot_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetDeviceName.srv" "std_msgs/String"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetHOMEParams.srv" ""
 )
 
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetTRIGCmd.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIOMultiplexing.srv" NAME_WE)
 add_custom_target(_dobot_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetTRIGCmd.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIOMultiplexing.srv" ""
 )
 
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetWAITCmd.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOPWM.srv" NAME_WE)
 add_custom_target(_dobot_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetWAITCmd.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOPWM.srv" ""
 )
 
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOMultiplexing.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOMultiplexing.srv" NAME_WE)
 add_custom_target(_dobot_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOMultiplexing.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOMultiplexing.srv" ""
 )
 
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGCommonParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetInfraredSensor.srv" NAME_WE)
 add_custom_target(_dobot_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGCommonParams.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetInfraredSensor.srv" ""
 )
 
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGCoordinateParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIODI.srv" NAME_WE)
 add_custom_target(_dobot_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGCoordinateParams.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIODI.srv" ""
 )
 
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCPParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdStartExec.srv" NAME_WE)
 add_custom_target(_dobot_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCPParams.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdStartExec.srv" ""
 )
 
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIOPWM.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCmdTimeout.srv" NAME_WE)
 add_custom_target(_dobot_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIOPWM.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCmdTimeout.srv" ""
 )
 
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIODO.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCoordinateParams.srv" NAME_WE)
 add_custom_target(_dobot_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIODO.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCoordinateParams.srv" ""
 )
 
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetInfraredSensor.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCmd.srv" NAME_WE)
 add_custom_target(_dobot_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetInfraredSensor.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCmd.srv" ""
 )
 
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetHOMEParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIODO.srv" NAME_WE)
 add_custom_target(_dobot_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetHOMEParams.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIODO.srv" ""
 )
 
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGJointParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPCommonParams.srv" NAME_WE)
 add_custom_target(_dobot_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGJointParams.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPCommonParams.srv" ""
 )
 
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceSN.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGCoordinateParams.srv" NAME_WE)
 add_custom_target(_dobot_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceSN.srv" "std_msgs/String"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGCoordinateParams.srv" ""
 )
 
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/msg/CartesianSimple.msg" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetInfraredSensor.srv" NAME_WE)
 add_custom_target(_dobot_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/msg/CartesianSimple.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetInfraredSensor.srv" ""
 )
 
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCPCmd.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetARCParams.srv" NAME_WE)
 add_custom_target(_dobot_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCPCmd.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetARCParams.srv" ""
 )
 
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetColorSensor.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetColorSensor.srv" NAME_WE)
 add_custom_target(_dobot_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetColorSensor.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dobot" "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetColorSensor.srv" ""
 )
 
 #
@@ -329,7 +329,7 @@ add_custom_target(_dobot_generate_messages_check_deps_${_filename}
 ### Section generating for lang: gencpp
 ### Generating Messages
 _generate_msg_cpp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/msg/CartesianSimple.msg"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/msg/CartesianSimple.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
@@ -337,361 +337,361 @@ _generate_msg_cpp(dobot
 
 ### Generating Services
 _generate_srv_cpp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPJumpParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
 )
 _generate_srv_cpp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOPWM.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorSuctionCup.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
 )
 _generate_srv_cpp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIOMultiplexing.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/ClearAllAlarmsState.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
 )
 _generate_srv_cpp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetCPParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCPParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
 )
 _generate_srv_cpp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/ClearAllAlarmsState.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetWAITCmd.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
 )
 _generate_srv_cpp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorParams.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
-)
-_generate_srv_cpp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceVersion.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
-)
-_generate_srv_cpp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPJumpParams.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
-)
-_generate_srv_cpp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorSuctionCup.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
-)
-_generate_srv_cpp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCommonParams.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
-)
-_generate_srv_cpp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorLaser.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
-)
-_generate_srv_cpp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetInfraredSensor.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
-)
-_generate_srv_cpp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetARCCmd.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
-)
-_generate_srv_cpp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceName.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceName.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/String.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
 )
 _generate_srv_cpp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCoordinateParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIOPWM.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
 )
 _generate_srv_cpp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCmd.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOADC.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
 )
 _generate_srv_cpp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetARCParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdForceStopExec.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
 )
 _generate_srv_cpp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorSuctionCup.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetColorSensor.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
 )
 _generate_srv_cpp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCoordinateParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGCommonParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
 )
 _generate_srv_cpp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCmd.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPJointParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
 )
 _generate_srv_cpp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOADC.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetARCCmd.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
 )
 _generate_srv_cpp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPCoordinateParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
 )
 _generate_srv_cpp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEMotor.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPose.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
 )
 _generate_srv_cpp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdStopExec.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCommonParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
 )
 _generate_srv_cpp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPJointParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPJumpParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
 )
 _generate_srv_cpp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIODO.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEMotor.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
 )
 _generate_srv_cpp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetColorSensor.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorGripper.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
 )
 _generate_srv_cpp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPCommonParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetCPParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
 )
 _generate_srv_cpp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorGripper.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCPCmd.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
 )
 _generate_srv_cpp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetHOMEParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdStartExec.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
 )
 _generate_srv_cpp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorGripper.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
 )
 _generate_srv_cpp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdForceStopExec.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGJointParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
 )
 _generate_srv_cpp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorGripper.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceVersion.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
 )
 _generate_srv_cpp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGJointParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPJointParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
 )
 _generate_srv_cpp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCmdTimeout.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetHOMECmd.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
 )
 _generate_srv_cpp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetHOMECmd.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorLaser.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
 )
 _generate_srv_cpp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdStartExec.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetARCParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
 )
 _generate_srv_cpp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIODI.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPCoordinateParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
 )
 _generate_srv_cpp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIODO.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPJumpParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
 )
 _generate_srv_cpp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetARCParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCommonParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
 )
 _generate_srv_cpp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorLaser.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetHOMEParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
 )
 _generate_srv_cpp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetAlarmsState.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIODO.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
 )
 _generate_srv_cpp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetWAITCmd.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOMultiplexing.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
 )
 _generate_srv_cpp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdClear.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGJointParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
 )
 _generate_srv_cpp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPJointParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCoordinateParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
 )
 _generate_srv_cpp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetTRIGCmd.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetTRIGCmd.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
 )
 _generate_srv_cpp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetDeviceName.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorLaser.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
+)
+_generate_srv_cpp(dobot
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetDeviceName.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/String.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
 )
 _generate_srv_cpp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCPParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdClear.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
 )
 _generate_srv_cpp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOMultiplexing.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorSuctionCup.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
 )
 _generate_srv_cpp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCPCmd.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetAlarmsState.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
 )
 _generate_srv_cpp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGCoordinateParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetHOMEParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
 )
 _generate_srv_cpp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCommonParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIOMultiplexing.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
 )
 _generate_srv_cpp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIOPWM.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOPWM.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
 )
 _generate_srv_cpp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPose.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetARCParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
 )
 _generate_srv_cpp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetInfraredSensor.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCmd.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
 )
 _generate_srv_cpp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetHOMEParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetInfraredSensor.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
 )
 _generate_srv_cpp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGJointParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIODI.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
 )
 _generate_srv_cpp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceSN.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIODO.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
+)
+_generate_srv_cpp(dobot
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceSN.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/String.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
 )
 _generate_srv_cpp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGCommonParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdStopExec.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
 )
 _generate_srv_cpp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetColorSensor.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCmd.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
+)
+_generate_srv_cpp(dobot
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCmdTimeout.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
+)
+_generate_srv_cpp(dobot
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPCommonParams.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
+)
+_generate_srv_cpp(dobot
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGCoordinateParams.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
+)
+_generate_srv_cpp(dobot
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetInfraredSensor.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
+)
+_generate_srv_cpp(dobot
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCoordinateParams.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
+)
+_generate_srv_cpp(dobot
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetColorSensor.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dobot
@@ -709,127 +709,127 @@ add_custom_target(dobot_generate_messages_cpp
 add_dependencies(dobot_generate_messages dobot_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPJumpParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_cpp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOPWM.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorSuctionCup.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_cpp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorGripper.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/ClearAllAlarmsState.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_cpp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetCPParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorSuctionCup.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_cpp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/ClearAllAlarmsState.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetWAITCmd.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_cpp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPCoordinateParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceName.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_cpp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIOPWM.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_cpp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceVersion.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOADC.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_cpp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPJumpParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdForceStopExec.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_cpp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorSuctionCup.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorGripper.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_cpp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCommonParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGCommonParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_cpp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorLaser.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCommonParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_cpp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetInfraredSensor.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetARCCmd.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_cpp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetARCCmd.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_cpp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceName.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPose.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_cpp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCoordinateParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGJointParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_cpp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCmd.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPJumpParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_cpp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCommonParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEMotor.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_cpp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetARCParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorGripper.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_cpp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorSuctionCup.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetCPParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_cpp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCoordinateParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCPCmd.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_cpp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCmd.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetColorSensor.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_cpp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOADC.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCommonParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_cpp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdStopExec.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceVersion.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_cpp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPJointParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPJointParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_cpp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPose.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetHOMECmd.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_cpp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetColorSensor.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorLaser.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_cpp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPCommonParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetARCParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_cpp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIOMultiplexing.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdStopExec.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_cpp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetHOMEParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCmd.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_cpp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPJumpParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_cpp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdForceStopExec.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetHOMEParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_cpp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorGripper.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPJointParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_cpp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGJointParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPCoordinateParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_cpp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCmdTimeout.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIODO.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_cpp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetHOMECmd.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGJointParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_cpp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdStartExec.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCoordinateParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_cpp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIODI.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetTRIGCmd.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_cpp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIODO.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorLaser.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_cpp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetARCParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetDeviceName.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_cpp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorLaser.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdClear.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_cpp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetAlarmsState.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceSN.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_cpp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEMotor.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/msg/CartesianSimple.msg" NAME_WE)
 add_dependencies(dobot_generate_messages_cpp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdClear.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCPParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_cpp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPJointParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetAlarmsState.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_cpp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetDeviceName.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetHOMEParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_cpp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetTRIGCmd.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIOMultiplexing.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_cpp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetWAITCmd.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOPWM.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_cpp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOMultiplexing.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOMultiplexing.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_cpp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGCommonParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetInfraredSensor.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_cpp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGCoordinateParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIODI.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_cpp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCPParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdStartExec.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_cpp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIOPWM.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCmdTimeout.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_cpp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIODO.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCoordinateParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_cpp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetInfraredSensor.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCmd.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_cpp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetHOMEParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIODO.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_cpp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGJointParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPCommonParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_cpp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceSN.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGCoordinateParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_cpp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/msg/CartesianSimple.msg" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetInfraredSensor.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_cpp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCPCmd.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetARCParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_cpp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetColorSensor.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetColorSensor.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_cpp _dobot_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -842,7 +842,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS dobot_generate_messages_cpp)
 ### Section generating for lang: geneus
 ### Generating Messages
 _generate_msg_eus(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/msg/CartesianSimple.msg"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/msg/CartesianSimple.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
@@ -850,361 +850,361 @@ _generate_msg_eus(dobot
 
 ### Generating Services
 _generate_srv_eus(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPJumpParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
 )
 _generate_srv_eus(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOPWM.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorSuctionCup.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
 )
 _generate_srv_eus(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIOMultiplexing.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/ClearAllAlarmsState.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
 )
 _generate_srv_eus(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetCPParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCPParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
 )
 _generate_srv_eus(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/ClearAllAlarmsState.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetWAITCmd.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
 )
 _generate_srv_eus(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorParams.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
-)
-_generate_srv_eus(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceVersion.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
-)
-_generate_srv_eus(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPJumpParams.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
-)
-_generate_srv_eus(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorSuctionCup.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
-)
-_generate_srv_eus(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCommonParams.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
-)
-_generate_srv_eus(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorLaser.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
-)
-_generate_srv_eus(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetInfraredSensor.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
-)
-_generate_srv_eus(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetARCCmd.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
-)
-_generate_srv_eus(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceName.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceName.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/String.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
 )
 _generate_srv_eus(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCoordinateParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIOPWM.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
 )
 _generate_srv_eus(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCmd.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOADC.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
 )
 _generate_srv_eus(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetARCParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdForceStopExec.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
 )
 _generate_srv_eus(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorSuctionCup.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetColorSensor.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
 )
 _generate_srv_eus(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCoordinateParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGCommonParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
 )
 _generate_srv_eus(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCmd.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPJointParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
 )
 _generate_srv_eus(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOADC.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetARCCmd.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
 )
 _generate_srv_eus(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPCoordinateParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
 )
 _generate_srv_eus(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEMotor.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPose.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
 )
 _generate_srv_eus(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdStopExec.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCommonParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
 )
 _generate_srv_eus(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPJointParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPJumpParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
 )
 _generate_srv_eus(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIODO.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEMotor.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
 )
 _generate_srv_eus(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetColorSensor.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorGripper.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
 )
 _generate_srv_eus(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPCommonParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetCPParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
 )
 _generate_srv_eus(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorGripper.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCPCmd.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
 )
 _generate_srv_eus(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetHOMEParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdStartExec.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
 )
 _generate_srv_eus(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorGripper.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
 )
 _generate_srv_eus(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdForceStopExec.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGJointParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
 )
 _generate_srv_eus(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorGripper.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceVersion.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
 )
 _generate_srv_eus(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGJointParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPJointParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
 )
 _generate_srv_eus(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCmdTimeout.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetHOMECmd.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
 )
 _generate_srv_eus(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetHOMECmd.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorLaser.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
 )
 _generate_srv_eus(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdStartExec.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetARCParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
 )
 _generate_srv_eus(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIODI.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPCoordinateParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
 )
 _generate_srv_eus(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIODO.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPJumpParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
 )
 _generate_srv_eus(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetARCParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCommonParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
 )
 _generate_srv_eus(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorLaser.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetHOMEParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
 )
 _generate_srv_eus(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetAlarmsState.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIODO.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
 )
 _generate_srv_eus(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetWAITCmd.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOMultiplexing.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
 )
 _generate_srv_eus(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdClear.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGJointParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
 )
 _generate_srv_eus(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPJointParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCoordinateParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
 )
 _generate_srv_eus(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetTRIGCmd.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetTRIGCmd.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
 )
 _generate_srv_eus(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetDeviceName.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorLaser.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
+)
+_generate_srv_eus(dobot
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetDeviceName.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/String.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
 )
 _generate_srv_eus(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCPParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdClear.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
 )
 _generate_srv_eus(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOMultiplexing.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorSuctionCup.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
 )
 _generate_srv_eus(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCPCmd.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetAlarmsState.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
 )
 _generate_srv_eus(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGCoordinateParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetHOMEParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
 )
 _generate_srv_eus(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCommonParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIOMultiplexing.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
 )
 _generate_srv_eus(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIOPWM.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOPWM.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
 )
 _generate_srv_eus(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPose.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetARCParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
 )
 _generate_srv_eus(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetInfraredSensor.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCmd.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
 )
 _generate_srv_eus(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetHOMEParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetInfraredSensor.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
 )
 _generate_srv_eus(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGJointParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIODI.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
 )
 _generate_srv_eus(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceSN.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIODO.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
+)
+_generate_srv_eus(dobot
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceSN.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/String.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
 )
 _generate_srv_eus(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGCommonParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdStopExec.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
 )
 _generate_srv_eus(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetColorSensor.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCmd.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
+)
+_generate_srv_eus(dobot
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCmdTimeout.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
+)
+_generate_srv_eus(dobot
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPCommonParams.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
+)
+_generate_srv_eus(dobot
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGCoordinateParams.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
+)
+_generate_srv_eus(dobot
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetInfraredSensor.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
+)
+_generate_srv_eus(dobot
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCoordinateParams.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
+)
+_generate_srv_eus(dobot
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetColorSensor.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dobot
@@ -1222,127 +1222,127 @@ add_custom_target(dobot_generate_messages_eus
 add_dependencies(dobot_generate_messages dobot_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPJumpParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_eus _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOPWM.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorSuctionCup.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_eus _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorGripper.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/ClearAllAlarmsState.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_eus _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetCPParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorSuctionCup.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_eus _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/ClearAllAlarmsState.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetWAITCmd.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_eus _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPCoordinateParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceName.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_eus _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIOPWM.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_eus _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceVersion.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOADC.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_eus _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPJumpParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdForceStopExec.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_eus _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorSuctionCup.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorGripper.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_eus _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCommonParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGCommonParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_eus _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorLaser.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCommonParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_eus _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetInfraredSensor.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetARCCmd.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_eus _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetARCCmd.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_eus _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceName.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPose.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_eus _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCoordinateParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGJointParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_eus _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCmd.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPJumpParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_eus _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCommonParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEMotor.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_eus _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetARCParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorGripper.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_eus _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorSuctionCup.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetCPParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_eus _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCoordinateParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCPCmd.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_eus _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCmd.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetColorSensor.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_eus _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOADC.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCommonParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_eus _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdStopExec.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceVersion.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_eus _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPJointParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPJointParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_eus _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPose.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetHOMECmd.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_eus _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetColorSensor.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorLaser.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_eus _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPCommonParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetARCParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_eus _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIOMultiplexing.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdStopExec.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_eus _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetHOMEParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCmd.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_eus _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPJumpParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_eus _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdForceStopExec.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetHOMEParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_eus _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorGripper.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPJointParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_eus _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGJointParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPCoordinateParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_eus _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCmdTimeout.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIODO.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_eus _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetHOMECmd.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGJointParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_eus _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdStartExec.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCoordinateParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_eus _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIODI.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetTRIGCmd.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_eus _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIODO.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorLaser.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_eus _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetARCParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetDeviceName.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_eus _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorLaser.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdClear.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_eus _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetAlarmsState.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceSN.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_eus _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEMotor.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/msg/CartesianSimple.msg" NAME_WE)
 add_dependencies(dobot_generate_messages_eus _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdClear.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCPParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_eus _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPJointParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetAlarmsState.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_eus _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetDeviceName.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetHOMEParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_eus _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetTRIGCmd.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIOMultiplexing.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_eus _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetWAITCmd.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOPWM.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_eus _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOMultiplexing.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOMultiplexing.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_eus _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGCommonParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetInfraredSensor.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_eus _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGCoordinateParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIODI.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_eus _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCPParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdStartExec.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_eus _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIOPWM.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCmdTimeout.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_eus _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIODO.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCoordinateParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_eus _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetInfraredSensor.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCmd.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_eus _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetHOMEParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIODO.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_eus _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGJointParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPCommonParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_eus _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceSN.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGCoordinateParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_eus _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/msg/CartesianSimple.msg" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetInfraredSensor.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_eus _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCPCmd.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetARCParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_eus _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetColorSensor.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetColorSensor.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_eus _dobot_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -1355,7 +1355,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS dobot_generate_messages_eus)
 ### Section generating for lang: genlisp
 ### Generating Messages
 _generate_msg_lisp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/msg/CartesianSimple.msg"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/msg/CartesianSimple.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
@@ -1363,361 +1363,361 @@ _generate_msg_lisp(dobot
 
 ### Generating Services
 _generate_srv_lisp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPJumpParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
 )
 _generate_srv_lisp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOPWM.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorSuctionCup.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
 )
 _generate_srv_lisp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIOMultiplexing.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/ClearAllAlarmsState.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
 )
 _generate_srv_lisp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetCPParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCPParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
 )
 _generate_srv_lisp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/ClearAllAlarmsState.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetWAITCmd.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
 )
 _generate_srv_lisp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorParams.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
-)
-_generate_srv_lisp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceVersion.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
-)
-_generate_srv_lisp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPJumpParams.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
-)
-_generate_srv_lisp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorSuctionCup.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
-)
-_generate_srv_lisp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCommonParams.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
-)
-_generate_srv_lisp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorLaser.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
-)
-_generate_srv_lisp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetInfraredSensor.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
-)
-_generate_srv_lisp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetARCCmd.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
-)
-_generate_srv_lisp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceName.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceName.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/String.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
 )
 _generate_srv_lisp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCoordinateParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIOPWM.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
 )
 _generate_srv_lisp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCmd.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOADC.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
 )
 _generate_srv_lisp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetARCParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdForceStopExec.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
 )
 _generate_srv_lisp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorSuctionCup.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetColorSensor.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
 )
 _generate_srv_lisp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCoordinateParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGCommonParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
 )
 _generate_srv_lisp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCmd.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPJointParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
 )
 _generate_srv_lisp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOADC.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetARCCmd.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
 )
 _generate_srv_lisp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPCoordinateParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
 )
 _generate_srv_lisp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEMotor.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPose.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
 )
 _generate_srv_lisp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdStopExec.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCommonParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
 )
 _generate_srv_lisp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPJointParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPJumpParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
 )
 _generate_srv_lisp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIODO.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEMotor.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
 )
 _generate_srv_lisp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetColorSensor.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorGripper.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
 )
 _generate_srv_lisp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPCommonParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetCPParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
 )
 _generate_srv_lisp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorGripper.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCPCmd.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
 )
 _generate_srv_lisp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetHOMEParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdStartExec.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
 )
 _generate_srv_lisp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorGripper.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
 )
 _generate_srv_lisp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdForceStopExec.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGJointParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
 )
 _generate_srv_lisp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorGripper.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceVersion.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
 )
 _generate_srv_lisp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGJointParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPJointParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
 )
 _generate_srv_lisp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCmdTimeout.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetHOMECmd.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
 )
 _generate_srv_lisp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetHOMECmd.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorLaser.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
 )
 _generate_srv_lisp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdStartExec.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetARCParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
 )
 _generate_srv_lisp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIODI.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPCoordinateParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
 )
 _generate_srv_lisp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIODO.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPJumpParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
 )
 _generate_srv_lisp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetARCParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCommonParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
 )
 _generate_srv_lisp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorLaser.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetHOMEParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
 )
 _generate_srv_lisp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetAlarmsState.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIODO.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
 )
 _generate_srv_lisp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetWAITCmd.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOMultiplexing.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
 )
 _generate_srv_lisp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdClear.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGJointParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
 )
 _generate_srv_lisp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPJointParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCoordinateParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
 )
 _generate_srv_lisp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetTRIGCmd.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetTRIGCmd.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
 )
 _generate_srv_lisp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetDeviceName.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorLaser.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
+)
+_generate_srv_lisp(dobot
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetDeviceName.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/String.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
 )
 _generate_srv_lisp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCPParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdClear.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
 )
 _generate_srv_lisp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOMultiplexing.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorSuctionCup.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
 )
 _generate_srv_lisp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCPCmd.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetAlarmsState.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
 )
 _generate_srv_lisp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGCoordinateParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetHOMEParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
 )
 _generate_srv_lisp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCommonParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIOMultiplexing.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
 )
 _generate_srv_lisp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIOPWM.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOPWM.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
 )
 _generate_srv_lisp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPose.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetARCParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
 )
 _generate_srv_lisp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetInfraredSensor.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCmd.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
 )
 _generate_srv_lisp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetHOMEParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetInfraredSensor.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
 )
 _generate_srv_lisp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGJointParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIODI.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
 )
 _generate_srv_lisp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceSN.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIODO.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
+)
+_generate_srv_lisp(dobot
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceSN.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/String.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
 )
 _generate_srv_lisp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGCommonParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdStopExec.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
 )
 _generate_srv_lisp(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetColorSensor.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCmd.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
+)
+_generate_srv_lisp(dobot
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCmdTimeout.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
+)
+_generate_srv_lisp(dobot
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPCommonParams.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
+)
+_generate_srv_lisp(dobot
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGCoordinateParams.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
+)
+_generate_srv_lisp(dobot
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetInfraredSensor.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
+)
+_generate_srv_lisp(dobot
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCoordinateParams.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
+)
+_generate_srv_lisp(dobot
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetColorSensor.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dobot
@@ -1735,127 +1735,127 @@ add_custom_target(dobot_generate_messages_lisp
 add_dependencies(dobot_generate_messages dobot_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPJumpParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_lisp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOPWM.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorSuctionCup.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_lisp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorGripper.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/ClearAllAlarmsState.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_lisp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetCPParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorSuctionCup.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_lisp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/ClearAllAlarmsState.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetWAITCmd.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_lisp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPCoordinateParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceName.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_lisp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIOPWM.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_lisp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceVersion.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOADC.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_lisp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPJumpParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdForceStopExec.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_lisp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorSuctionCup.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorGripper.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_lisp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCommonParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGCommonParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_lisp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorLaser.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCommonParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_lisp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetInfraredSensor.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetARCCmd.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_lisp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetARCCmd.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_lisp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceName.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPose.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_lisp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCoordinateParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGJointParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_lisp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCmd.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPJumpParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_lisp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCommonParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEMotor.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_lisp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetARCParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorGripper.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_lisp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorSuctionCup.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetCPParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_lisp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCoordinateParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCPCmd.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_lisp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCmd.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetColorSensor.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_lisp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOADC.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCommonParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_lisp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdStopExec.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceVersion.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_lisp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPJointParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPJointParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_lisp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPose.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetHOMECmd.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_lisp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetColorSensor.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorLaser.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_lisp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPCommonParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetARCParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_lisp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIOMultiplexing.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdStopExec.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_lisp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetHOMEParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCmd.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_lisp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPJumpParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_lisp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdForceStopExec.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetHOMEParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_lisp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorGripper.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPJointParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_lisp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGJointParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPCoordinateParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_lisp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCmdTimeout.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIODO.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_lisp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetHOMECmd.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGJointParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_lisp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdStartExec.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCoordinateParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_lisp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIODI.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetTRIGCmd.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_lisp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIODO.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorLaser.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_lisp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetARCParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetDeviceName.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_lisp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorLaser.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdClear.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_lisp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetAlarmsState.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceSN.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_lisp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEMotor.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/msg/CartesianSimple.msg" NAME_WE)
 add_dependencies(dobot_generate_messages_lisp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdClear.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCPParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_lisp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPJointParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetAlarmsState.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_lisp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetDeviceName.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetHOMEParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_lisp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetTRIGCmd.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIOMultiplexing.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_lisp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetWAITCmd.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOPWM.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_lisp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOMultiplexing.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOMultiplexing.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_lisp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGCommonParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetInfraredSensor.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_lisp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGCoordinateParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIODI.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_lisp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCPParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdStartExec.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_lisp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIOPWM.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCmdTimeout.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_lisp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIODO.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCoordinateParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_lisp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetInfraredSensor.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCmd.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_lisp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetHOMEParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIODO.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_lisp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGJointParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPCommonParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_lisp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceSN.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGCoordinateParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_lisp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/msg/CartesianSimple.msg" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetInfraredSensor.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_lisp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCPCmd.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetARCParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_lisp _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetColorSensor.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetColorSensor.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_lisp _dobot_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -1868,7 +1868,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS dobot_generate_messages_lisp)
 ### Section generating for lang: gennodejs
 ### Generating Messages
 _generate_msg_nodejs(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/msg/CartesianSimple.msg"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/msg/CartesianSimple.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
@@ -1876,361 +1876,361 @@ _generate_msg_nodejs(dobot
 
 ### Generating Services
 _generate_srv_nodejs(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPJumpParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
 )
 _generate_srv_nodejs(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOPWM.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorSuctionCup.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
 )
 _generate_srv_nodejs(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIOMultiplexing.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/ClearAllAlarmsState.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
 )
 _generate_srv_nodejs(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetCPParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCPParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
 )
 _generate_srv_nodejs(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/ClearAllAlarmsState.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetWAITCmd.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
 )
 _generate_srv_nodejs(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorParams.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
-)
-_generate_srv_nodejs(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceVersion.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
-)
-_generate_srv_nodejs(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPJumpParams.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
-)
-_generate_srv_nodejs(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorSuctionCup.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
-)
-_generate_srv_nodejs(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCommonParams.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
-)
-_generate_srv_nodejs(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorLaser.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
-)
-_generate_srv_nodejs(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetInfraredSensor.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
-)
-_generate_srv_nodejs(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetARCCmd.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
-)
-_generate_srv_nodejs(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceName.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceName.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/String.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
 )
 _generate_srv_nodejs(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCoordinateParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIOPWM.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
 )
 _generate_srv_nodejs(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCmd.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOADC.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
 )
 _generate_srv_nodejs(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetARCParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdForceStopExec.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
 )
 _generate_srv_nodejs(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorSuctionCup.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetColorSensor.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
 )
 _generate_srv_nodejs(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCoordinateParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGCommonParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
 )
 _generate_srv_nodejs(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCmd.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPJointParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
 )
 _generate_srv_nodejs(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOADC.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetARCCmd.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
 )
 _generate_srv_nodejs(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPCoordinateParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
 )
 _generate_srv_nodejs(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEMotor.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPose.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
 )
 _generate_srv_nodejs(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdStopExec.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCommonParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
 )
 _generate_srv_nodejs(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPJointParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPJumpParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
 )
 _generate_srv_nodejs(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIODO.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEMotor.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
 )
 _generate_srv_nodejs(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetColorSensor.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorGripper.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
 )
 _generate_srv_nodejs(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPCommonParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetCPParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
 )
 _generate_srv_nodejs(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorGripper.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCPCmd.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
 )
 _generate_srv_nodejs(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetHOMEParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdStartExec.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
 )
 _generate_srv_nodejs(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorGripper.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
 )
 _generate_srv_nodejs(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdForceStopExec.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGJointParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
 )
 _generate_srv_nodejs(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorGripper.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceVersion.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
 )
 _generate_srv_nodejs(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGJointParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPJointParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
 )
 _generate_srv_nodejs(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCmdTimeout.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetHOMECmd.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
 )
 _generate_srv_nodejs(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetHOMECmd.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorLaser.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
 )
 _generate_srv_nodejs(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdStartExec.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetARCParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
 )
 _generate_srv_nodejs(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIODI.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPCoordinateParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
 )
 _generate_srv_nodejs(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIODO.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPJumpParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
 )
 _generate_srv_nodejs(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetARCParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCommonParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
 )
 _generate_srv_nodejs(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorLaser.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetHOMEParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
 )
 _generate_srv_nodejs(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetAlarmsState.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIODO.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
 )
 _generate_srv_nodejs(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetWAITCmd.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOMultiplexing.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
 )
 _generate_srv_nodejs(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdClear.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGJointParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
 )
 _generate_srv_nodejs(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPJointParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCoordinateParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
 )
 _generate_srv_nodejs(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetTRIGCmd.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetTRIGCmd.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
 )
 _generate_srv_nodejs(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetDeviceName.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorLaser.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
+)
+_generate_srv_nodejs(dobot
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetDeviceName.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/String.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
 )
 _generate_srv_nodejs(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCPParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdClear.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
 )
 _generate_srv_nodejs(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOMultiplexing.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorSuctionCup.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
 )
 _generate_srv_nodejs(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCPCmd.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetAlarmsState.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
 )
 _generate_srv_nodejs(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGCoordinateParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetHOMEParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
 )
 _generate_srv_nodejs(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCommonParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIOMultiplexing.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
 )
 _generate_srv_nodejs(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIOPWM.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOPWM.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
 )
 _generate_srv_nodejs(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPose.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetARCParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
 )
 _generate_srv_nodejs(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetInfraredSensor.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCmd.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
 )
 _generate_srv_nodejs(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetHOMEParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetInfraredSensor.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
 )
 _generate_srv_nodejs(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGJointParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIODI.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
 )
 _generate_srv_nodejs(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceSN.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIODO.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
+)
+_generate_srv_nodejs(dobot
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceSN.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/String.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
 )
 _generate_srv_nodejs(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGCommonParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdStopExec.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
 )
 _generate_srv_nodejs(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetColorSensor.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCmd.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
+)
+_generate_srv_nodejs(dobot
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCmdTimeout.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
+)
+_generate_srv_nodejs(dobot
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPCommonParams.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
+)
+_generate_srv_nodejs(dobot
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGCoordinateParams.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
+)
+_generate_srv_nodejs(dobot
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetInfraredSensor.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
+)
+_generate_srv_nodejs(dobot
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCoordinateParams.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
+)
+_generate_srv_nodejs(dobot
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetColorSensor.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dobot
@@ -2248,127 +2248,127 @@ add_custom_target(dobot_generate_messages_nodejs
 add_dependencies(dobot_generate_messages dobot_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPJumpParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_nodejs _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOPWM.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorSuctionCup.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_nodejs _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorGripper.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/ClearAllAlarmsState.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_nodejs _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetCPParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorSuctionCup.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_nodejs _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/ClearAllAlarmsState.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetWAITCmd.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_nodejs _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPCoordinateParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceName.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_nodejs _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIOPWM.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_nodejs _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceVersion.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOADC.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_nodejs _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPJumpParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdForceStopExec.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_nodejs _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorSuctionCup.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorGripper.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_nodejs _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCommonParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGCommonParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_nodejs _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorLaser.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCommonParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_nodejs _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetInfraredSensor.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetARCCmd.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_nodejs _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetARCCmd.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_nodejs _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceName.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPose.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_nodejs _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCoordinateParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGJointParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_nodejs _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCmd.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPJumpParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_nodejs _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCommonParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEMotor.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_nodejs _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetARCParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorGripper.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_nodejs _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorSuctionCup.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetCPParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_nodejs _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCoordinateParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCPCmd.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_nodejs _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCmd.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetColorSensor.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_nodejs _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOADC.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCommonParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_nodejs _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdStopExec.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceVersion.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_nodejs _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPJointParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPJointParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_nodejs _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPose.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetHOMECmd.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_nodejs _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetColorSensor.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorLaser.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_nodejs _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPCommonParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetARCParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_nodejs _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIOMultiplexing.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdStopExec.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_nodejs _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetHOMEParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCmd.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_nodejs _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPJumpParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_nodejs _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdForceStopExec.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetHOMEParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_nodejs _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorGripper.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPJointParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_nodejs _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGJointParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPCoordinateParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_nodejs _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCmdTimeout.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIODO.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_nodejs _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetHOMECmd.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGJointParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_nodejs _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdStartExec.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCoordinateParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_nodejs _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIODI.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetTRIGCmd.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_nodejs _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIODO.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorLaser.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_nodejs _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetARCParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetDeviceName.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_nodejs _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorLaser.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdClear.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_nodejs _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetAlarmsState.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceSN.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_nodejs _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEMotor.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/msg/CartesianSimple.msg" NAME_WE)
 add_dependencies(dobot_generate_messages_nodejs _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdClear.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCPParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_nodejs _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPJointParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetAlarmsState.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_nodejs _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetDeviceName.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetHOMEParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_nodejs _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetTRIGCmd.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIOMultiplexing.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_nodejs _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetWAITCmd.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOPWM.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_nodejs _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOMultiplexing.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOMultiplexing.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_nodejs _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGCommonParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetInfraredSensor.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_nodejs _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGCoordinateParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIODI.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_nodejs _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCPParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdStartExec.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_nodejs _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIOPWM.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCmdTimeout.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_nodejs _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIODO.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCoordinateParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_nodejs _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetInfraredSensor.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCmd.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_nodejs _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetHOMEParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIODO.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_nodejs _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGJointParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPCommonParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_nodejs _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceSN.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGCoordinateParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_nodejs _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/msg/CartesianSimple.msg" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetInfraredSensor.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_nodejs _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCPCmd.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetARCParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_nodejs _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetColorSensor.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetColorSensor.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_nodejs _dobot_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -2381,7 +2381,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS dobot_generate_messages_nodejs)
 ### Section generating for lang: genpy
 ### Generating Messages
 _generate_msg_py(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/msg/CartesianSimple.msg"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/msg/CartesianSimple.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
@@ -2389,361 +2389,361 @@ _generate_msg_py(dobot
 
 ### Generating Services
 _generate_srv_py(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPJumpParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
 )
 _generate_srv_py(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOPWM.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorSuctionCup.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
 )
 _generate_srv_py(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIOMultiplexing.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/ClearAllAlarmsState.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
 )
 _generate_srv_py(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetCPParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCPParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
 )
 _generate_srv_py(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/ClearAllAlarmsState.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetWAITCmd.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
 )
 _generate_srv_py(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorParams.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
-)
-_generate_srv_py(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceVersion.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
-)
-_generate_srv_py(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPJumpParams.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
-)
-_generate_srv_py(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorSuctionCup.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
-)
-_generate_srv_py(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCommonParams.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
-)
-_generate_srv_py(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorLaser.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
-)
-_generate_srv_py(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetInfraredSensor.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
-)
-_generate_srv_py(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetARCCmd.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
-)
-_generate_srv_py(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceName.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceName.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/String.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
 )
 _generate_srv_py(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCoordinateParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIOPWM.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
 )
 _generate_srv_py(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCmd.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOADC.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
 )
 _generate_srv_py(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetARCParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdForceStopExec.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
 )
 _generate_srv_py(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorSuctionCup.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetColorSensor.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
 )
 _generate_srv_py(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCoordinateParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGCommonParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
 )
 _generate_srv_py(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCmd.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPJointParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
 )
 _generate_srv_py(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOADC.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetARCCmd.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
 )
 _generate_srv_py(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPCoordinateParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
 )
 _generate_srv_py(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEMotor.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPose.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
 )
 _generate_srv_py(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdStopExec.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCommonParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
 )
 _generate_srv_py(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPJointParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPJumpParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
 )
 _generate_srv_py(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIODO.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEMotor.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
 )
 _generate_srv_py(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetColorSensor.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorGripper.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
 )
 _generate_srv_py(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPCommonParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetCPParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
 )
 _generate_srv_py(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorGripper.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCPCmd.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
 )
 _generate_srv_py(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetHOMEParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdStartExec.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
 )
 _generate_srv_py(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorGripper.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
 )
 _generate_srv_py(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdForceStopExec.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGJointParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
 )
 _generate_srv_py(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorGripper.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceVersion.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
 )
 _generate_srv_py(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGJointParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPJointParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
 )
 _generate_srv_py(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCmdTimeout.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetHOMECmd.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
 )
 _generate_srv_py(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetHOMECmd.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorLaser.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
 )
 _generate_srv_py(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdStartExec.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetARCParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
 )
 _generate_srv_py(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIODI.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPCoordinateParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
 )
 _generate_srv_py(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIODO.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPJumpParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
 )
 _generate_srv_py(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetARCParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCommonParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
 )
 _generate_srv_py(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorLaser.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetHOMEParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
 )
 _generate_srv_py(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetAlarmsState.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIODO.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
 )
 _generate_srv_py(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetWAITCmd.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOMultiplexing.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
 )
 _generate_srv_py(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdClear.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGJointParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
 )
 _generate_srv_py(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPJointParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCoordinateParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
 )
 _generate_srv_py(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetTRIGCmd.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetTRIGCmd.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
 )
 _generate_srv_py(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetDeviceName.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorLaser.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
+)
+_generate_srv_py(dobot
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetDeviceName.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/String.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
 )
 _generate_srv_py(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCPParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdClear.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
 )
 _generate_srv_py(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOMultiplexing.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorSuctionCup.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
 )
 _generate_srv_py(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCPCmd.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetAlarmsState.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
 )
 _generate_srv_py(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGCoordinateParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetHOMEParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
 )
 _generate_srv_py(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCommonParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIOMultiplexing.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
 )
 _generate_srv_py(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIOPWM.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOPWM.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
 )
 _generate_srv_py(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPose.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetARCParams.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
 )
 _generate_srv_py(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetInfraredSensor.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCmd.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
 )
 _generate_srv_py(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetHOMEParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetInfraredSensor.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
 )
 _generate_srv_py(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGJointParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIODI.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
 )
 _generate_srv_py(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceSN.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIODO.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
+)
+_generate_srv_py(dobot
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceSN.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/String.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
 )
 _generate_srv_py(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGCommonParams.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdStopExec.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
 )
 _generate_srv_py(dobot
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetColorSensor.srv"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCmd.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
+)
+_generate_srv_py(dobot
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCmdTimeout.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
+)
+_generate_srv_py(dobot
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPCommonParams.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
+)
+_generate_srv_py(dobot
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGCoordinateParams.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
+)
+_generate_srv_py(dobot
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetInfraredSensor.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
+)
+_generate_srv_py(dobot
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCoordinateParams.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
+)
+_generate_srv_py(dobot
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetColorSensor.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dobot
@@ -2761,127 +2761,127 @@ add_custom_target(dobot_generate_messages_py
 add_dependencies(dobot_generate_messages dobot_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPJumpParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_py _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOPWM.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorSuctionCup.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_py _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorGripper.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/ClearAllAlarmsState.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_py _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetCPParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorSuctionCup.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_py _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/ClearAllAlarmsState.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetWAITCmd.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_py _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPCoordinateParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceName.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_py _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIOPWM.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_py _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceVersion.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOADC.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_py _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPJumpParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdForceStopExec.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_py _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorSuctionCup.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorGripper.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_py _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCommonParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGCommonParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_py _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorLaser.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCommonParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_py _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetInfraredSensor.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetARCCmd.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_py _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetARCCmd.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_py _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceName.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPose.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_py _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCoordinateParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGJointParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_py _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCmd.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPJumpParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_py _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCommonParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEMotor.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_py _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetARCParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorGripper.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_py _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorSuctionCup.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetCPParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_py _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCoordinateParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCPCmd.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_py _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCmd.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetColorSensor.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_py _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOADC.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCommonParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_py _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdStopExec.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceVersion.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_py _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPJointParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPJointParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_py _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPose.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetHOMECmd.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_py _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetColorSensor.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorLaser.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_py _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPCommonParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetARCParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_py _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIOMultiplexing.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdStopExec.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_py _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetHOMEParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCmd.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_py _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPJumpParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_py _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdForceStopExec.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetHOMEParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_py _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEndEffectorGripper.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPJointParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_py _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGJointParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPCoordinateParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_py _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCmdTimeout.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIODO.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_py _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetHOMECmd.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGJointParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_py _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdStartExec.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCoordinateParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_py _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIODI.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetTRIGCmd.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_py _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIODO.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorLaser.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_py _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetARCParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetDeviceName.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_py _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetEndEffectorLaser.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdClear.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_py _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetAlarmsState.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceSN.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_py _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetEMotor.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/msg/CartesianSimple.msg" NAME_WE)
 add_dependencies(dobot_generate_messages_py _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdClear.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCPParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_py _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPJointParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetAlarmsState.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_py _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetDeviceName.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetHOMEParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_py _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetTRIGCmd.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIOMultiplexing.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_py _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetWAITCmd.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOPWM.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_py _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOMultiplexing.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIOMultiplexing.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_py _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGCommonParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetInfraredSensor.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_py _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGCoordinateParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIODI.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_py _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCPParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetQueuedCmdStartExec.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_py _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIOPWM.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCmdTimeout.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_py _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetIODO.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetPTPCoordinateParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_py _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetInfraredSensor.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetJOGCmd.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_py _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetHOMEParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetIODO.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_py _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGJointParams.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetPTPCommonParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_py _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetDeviceSN.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetJOGCoordinateParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_py _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/msg/CartesianSimple.msg" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetInfraredSensor.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_py _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetCPCmd.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetARCParams.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_py _dobot_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/SetColorSensor.srv" NAME_WE)
+get_filename_component(_filename "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/srv/GetColorSensor.srv" NAME_WE)
 add_dependencies(dobot_generate_messages_py _dobot_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

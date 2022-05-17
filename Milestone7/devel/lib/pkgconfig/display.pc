@@ -1,4 +1,4 @@
-prefix=/home/melodic/Desktop/Dobot ROS Files/Milestone7/devel
+prefix=/home/choc/Desktop/Dobot ROS Files/Milestone7/devel
 
 Name: display
 Description: Description of display

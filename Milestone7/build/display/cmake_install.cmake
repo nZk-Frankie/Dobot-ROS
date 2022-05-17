@@ -1,8 +1,8 @@
-# Install script for directory: /home/melodic/Desktop/Dobot ROS Files/Milestone7/src/display
+# Install script for directory: /home/choc/Desktop/Dobot ROS Files/Milestone7/src/display
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/melodic/Desktop/Dobot ROS Files/Milestone7/install")
+  set(CMAKE_INSTALL_PREFIX "/home/choc/Desktop/Dobot ROS Files/Milestone7/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/melodic/Desktop/Dobot ROS Files/Milestone7/build/display/catkin_generated/installspace/display.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/choc/Desktop/Dobot ROS Files/Milestone7/build/display/catkin_generated/installspace/display.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/display/cmake" TYPE FILE FILES
-    "/home/melodic/Desktop/Dobot ROS Files/Milestone7/build/display/catkin_generated/installspace/displayConfig.cmake"
-    "/home/melodic/Desktop/Dobot ROS Files/Milestone7/build/display/catkin_generated/installspace/displayConfig-version.cmake"
+    "/home/choc/Desktop/Dobot ROS Files/Milestone7/build/display/catkin_generated/installspace/displayConfig.cmake"
+    "/home/choc/Desktop/Dobot ROS Files/Milestone7/build/display/catkin_generated/installspace/displayConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/display" TYPE FILE FILES "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/display/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/display" TYPE FILE FILES "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/display/package.xml")
 endif()
 

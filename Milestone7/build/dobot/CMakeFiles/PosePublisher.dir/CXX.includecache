@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/melodic/Desktop/Dobot ROS Files/Milestone7/devel/include/dobot/CartesianSimple.h
+/home/choc/Desktop/Dobot ROS Files/Milestone7/devel/include/dobot/CartesianSimple.h
 string
 -
 vector
@@ -22,7 +22,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/melodic/Desktop/Dobot ROS Files/Milestone7/devel/include/dobot/GetPose.h
+/home/choc/Desktop/Dobot ROS Files/Milestone7/devel/include/dobot/GetPose.h
 ros/service_traits.h
 -
 dobot/GetPoseRequest.h
@@ -30,7 +30,7 @@ dobot/GetPoseRequest.h
 dobot/GetPoseResponse.h
 -
 
-/home/melodic/Desktop/Dobot ROS Files/Milestone7/devel/include/dobot/GetPoseRequest.h
+/home/choc/Desktop/Dobot ROS Files/Milestone7/devel/include/dobot/GetPoseRequest.h
 string
 -
 vector
@@ -46,7 +46,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/melodic/Desktop/Dobot ROS Files/Milestone7/devel/include/dobot/GetPoseResponse.h
+/home/choc/Desktop/Dobot ROS Files/Milestone7/devel/include/dobot/GetPoseResponse.h
 string
 -
 vector
@@ -62,17 +62,17 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/src/pose_publisher.cpp
+/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/src/pose_publisher.cpp
 ros/ros.h
-/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/src/ros/ros.h
+/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/src/ros/ros.h
 dobot/GetPose.h
-/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/src/dobot/GetPose.h
+/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/src/dobot/GetPose.h
 dobot/CartesianSimple.h
-/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/src/dobot/CartesianSimple.h
+/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/src/dobot/CartesianSimple.h
 geometry_msgs/Pose.h
-/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/src/geometry_msgs/Pose.h
+/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/src/geometry_msgs/Pose.h
 sensor_msgs/JointState.h
-/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/src/sensor_msgs/JointState.h
+/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/src/sensor_msgs/JointState.h
 cmath
 -
 

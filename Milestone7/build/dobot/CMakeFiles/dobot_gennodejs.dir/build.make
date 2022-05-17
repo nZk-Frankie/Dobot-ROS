@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src"
+CMAKE_SOURCE_DIR = "/home/choc/Desktop/Dobot ROS Files/Milestone7/src"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/melodic/Desktop/Dobot ROS Files/Milestone7/build"
+CMAKE_BINARY_DIR = "/home/choc/Desktop/Dobot ROS Files/Milestone7/build"
 
 # Utility rule file for dobot_gennodejs.
 
@@ -63,10 +63,10 @@ dobot/CMakeFiles/dobot_gennodejs.dir/build: dobot_gennodejs
 .PHONY : dobot/CMakeFiles/dobot_gennodejs.dir/build
 
 dobot/CMakeFiles/dobot_gennodejs.dir/clean:
-	cd "/home/melodic/Desktop/Dobot ROS Files/Milestone7/build/dobot" && $(CMAKE_COMMAND) -P CMakeFiles/dobot_gennodejs.dir/cmake_clean.cmake
+	cd "/home/choc/Desktop/Dobot ROS Files/Milestone7/build/dobot" && $(CMAKE_COMMAND) -P CMakeFiles/dobot_gennodejs.dir/cmake_clean.cmake
 .PHONY : dobot/CMakeFiles/dobot_gennodejs.dir/clean
 
 dobot/CMakeFiles/dobot_gennodejs.dir/depend:
-	cd "/home/melodic/Desktop/Dobot ROS Files/Milestone7/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/build" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/build/dobot" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/build/dobot/CMakeFiles/dobot_gennodejs.dir/DependInfo.cmake" --color=$(COLOR)
+	cd "/home/choc/Desktop/Dobot ROS Files/Milestone7/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/choc/Desktop/Dobot ROS Files/Milestone7/src" "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot" "/home/choc/Desktop/Dobot ROS Files/Milestone7/build" "/home/choc/Desktop/Dobot ROS Files/Milestone7/build/dobot" "/home/choc/Desktop/Dobot ROS Files/Milestone7/build/dobot/CMakeFiles/dobot_gennodejs.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : dobot/CMakeFiles/dobot_gennodejs.dir/depend
 

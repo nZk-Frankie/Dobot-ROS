@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src"
+CMAKE_SOURCE_DIR = "/home/choc/Desktop/Dobot ROS Files/Milestone7/src"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/melodic/Desktop/Dobot ROS Files/Milestone7/build"
+CMAKE_BINARY_DIR = "/home/choc/Desktop/Dobot ROS Files/Milestone7/build"
 
 # Utility rule file for actionlib_msgs_generate_messages_eus.
 
@@ -63,10 +63,10 @@ display/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build: actionlib_msg
 .PHONY : display/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build
 
 display/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/clean:
-	cd "/home/melodic/Desktop/Dobot ROS Files/Milestone7/build/display" && $(CMAKE_COMMAND) -P CMakeFiles/actionlib_msgs_generate_messages_eus.dir/cmake_clean.cmake
+	cd "/home/choc/Desktop/Dobot ROS Files/Milestone7/build/display" && $(CMAKE_COMMAND) -P CMakeFiles/actionlib_msgs_generate_messages_eus.dir/cmake_clean.cmake
 .PHONY : display/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/clean
 
 display/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/depend:
-	cd "/home/melodic/Desktop/Dobot ROS Files/Milestone7/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/display" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/build" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/build/display" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/build/display/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/DependInfo.cmake" --color=$(COLOR)
+	cd "/home/choc/Desktop/Dobot ROS Files/Milestone7/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/choc/Desktop/Dobot ROS Files/Milestone7/src" "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/display" "/home/choc/Desktop/Dobot ROS Files/Milestone7/build" "/home/choc/Desktop/Dobot ROS Files/Milestone7/build/display" "/home/choc/Desktop/Dobot ROS Files/Milestone7/build/display/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : display/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/depend
 

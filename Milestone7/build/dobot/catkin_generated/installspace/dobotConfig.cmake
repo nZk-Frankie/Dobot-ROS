@@ -67,14 +67,14 @@ set(dobot_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(dobot_SOURCE_PREFIX /home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot)
-  set(dobot_DEVEL_PREFIX /home/melodic/Desktop/Dobot ROS Files/Milestone7/devel)
+  set(dobot_SOURCE_PREFIX /home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot)
+  set(dobot_DEVEL_PREFIX /home/choc/Desktop/Dobot ROS Files/Milestone7/devel)
   set(dobot_INSTALL_PREFIX "")
   set(dobot_PREFIX ${dobot_DEVEL_PREFIX})
 else()
   set(dobot_SOURCE_PREFIX "")
   set(dobot_DEVEL_PREFIX "")
-  set(dobot_INSTALL_PREFIX /home/melodic/Desktop/Dobot ROS Files/Milestone7/install)
+  set(dobot_INSTALL_PREFIX /home/choc/Desktop/Dobot ROS Files/Milestone7/install)
   set(dobot_PREFIX ${dobot_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/melodic/Desktop/Dobot ROS Files/Milestone7/install/lib;/home/melodic/dobot_ws/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/choc/Desktop/Dobot ROS Files/Milestone7/install/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

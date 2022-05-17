@@ -1,2 +1,2 @@
 display:dobot
--DCATKIN_DEVEL_PREFIX=/home/melodic/Desktop/Dobot ROS Files/Milestone7/devel -DCMAKE_INSTALL_PREFIX=/home/melodic/Desktop/Dobot ROS Files/Milestone7/install -G Unix Makefiles
+-DCATKIN_DEVEL_PREFIX=/home/choc/Desktop/Dobot ROS Files/Milestone7/devel -DCMAKE_INSTALL_PREFIX=/home/choc/Desktop/Dobot ROS Files/Milestone7/install -G Unix Makefiles

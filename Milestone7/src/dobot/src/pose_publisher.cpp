@@ -35,6 +35,8 @@ class PoseClientPublisher {
         ros::ServiceClient pose_client;  // Client instance
         dobot::GetPose getPose_srv;  // Service variable to be passed when calling GetPose
         ros::Publisher cartesian_pose_simple_pub;  // Publisher for the simple cartesian pose
+		ros::Publisher joint_angle_pub;
+		ros::Publisher quat_pub;
 
     //  Declare public functions for this class
     public:
@@ -46,6 +48,9 @@ class PoseClientPublisher {
             // Create a publisher to publish on the topic /dobot/cartesian_pose_simple with maximum queue size of 10.
             // The message type for this topic is dobot::CartesianSimple, defined in /msg/CartesianSimple.h
             cartesian_pose_simple_pub = nh->advertise<dobot::CartesianSimple>("/dobot/cartesian_simple_pose", 10);
+			joint_angle_pub = nh->advertise<sensor_msgs::JointState>("/dobot/joint_state_msg",10);
+			quat_pub = nh->advertise<geometry_msgs::Pose>("/dobot/pose",10);
+
 
             // Because the variable 'nh' is a pointer, 'nh->' is used instead of 'nh.'
         }
@@ -58,6 +63,7 @@ class PoseClientPublisher {
             //  Create a message of type dobot::CartesianSimple
             dobot::CartesianSimple cartesian_pose_simple_msg;
             sensor_msgs::JointState joint_state_msg;
+			geometry_msgs::Pose quat_state_msg;
 
             //  Set the message data to the corresponding variables from the service response
             cartesian_pose_simple_msg.x = getPose_srv.response.x;
@@ -67,9 +73,32 @@ class PoseClientPublisher {
 
 
             //  Publish the message using the appropriate publisher
-            cartesian_pose_simple_pub.publish(cartesian_pose_simple_msg);
-            joint_state_msg.name =  {"J1","J2","J3","J4"};
-            joint_state_msg.position = getPose_srv.response.jointAngle;
+            joint_state_msg.name.resize(4);
+			joint_state_msg.position.resize(4);
+
+			joint_state_msg.name[0]="J1"; joint_state_msg.position[0]= deg_to_rad(getPose_srv.response.jointAngle[0]);
+			joint_state_msg.name[1]="J1"; joint_state_msg.position[1]= deg_to_rad(getPose_srv.response.jointAngle[1]);
+			joint_state_msg.name[2]="J1"; joint_state_msg.position[2]= deg_to_rad(getPose_srv.response.jointAngle[2]);
+			joint_state_msg.name[3]="J1"; joint_state_msg.position[3]= deg_to_rad(getPose_srv.response.jointAngle[3]);
+
+			//quat
+			quat_state_msg.position.x = getPose_srv.response.x;
+			quat_state_msg.position.y = getPose_srv.response.y;
+			quat_state_msg.position.z = getPose_srv.response.z;
+
+			double r_inrad = deg_to_rad(getPose_srv.response.r);
+		
+			double cy = cos(r_inrad*0.5);
+			double sy = sin(r_inrad*0.5);
+			double cp =1;
+			double sp =0;
+			double cr =1;
+			double sr = 0;
+			
+			quat_state_msg.orientation.w = cr * cp * cy + sr * sp * sy;
+			quat_state_msg.orientation.x = sr * cp * cy - cr * sp * sy;
+			quat_state_msg.orientation.y = cr * sp * cy + sr * cp * sy;
+			quat_state_msg.orientation.z = cr * cp * sy - sr * sp * cy;
         }
 
         //  Converts an angle from degrees to radians

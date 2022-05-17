@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/src/pose_publisher.cpp" "/home/melodic/Desktop/Dobot ROS Files/Milestone7/build/dobot/CMakeFiles/PosePublisher.dir/src/pose_publisher.cpp.o"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/src/pose_publisher.cpp" "/home/choc/Desktop/Dobot ROS Files/Milestone7/build/dobot/CMakeFiles/PosePublisher.dir/src/pose_publisher.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,10 +17,10 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/devel/include"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/devel/include"
   "/opt/ros/melodic/include"
   "/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
-  "/home/melodic/Desktop/Dobot ROS Files/Milestone7/src/dobot/src/DobotDll_x64"
+  "/home/choc/Desktop/Dobot ROS Files/Milestone7/src/dobot/src/DobotDll_x64"
   )
 
 # Targets to which this target links.

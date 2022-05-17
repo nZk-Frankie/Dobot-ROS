@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/melodic/Desktop/Dobot ROS Files/Milestone7/install")
+  set(CMAKE_INSTALL_PREFIX "/home/choc/Desktop/Dobot ROS Files/Milestone7/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/melodic/Desktop/Dobot ROS Files/Milestone7/build/gtest/googlemock/gtest/cmake_install.cmake")
+  include("/home/choc/Desktop/Dobot ROS Files/Milestone7/build/gtest/googlemock/gtest/cmake_install.cmake")
 
 endif()
 
