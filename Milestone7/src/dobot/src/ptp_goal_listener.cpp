@@ -45,6 +45,9 @@ void quatCallback(const geometry_msgs::Pose &msg)
 	ptp_commands_pub.publish(msgOut);
 
 }
+float deg_to_rad(float deg_angle) {
+     return deg_angle*(M_PI/180.0);
+        }
 
 int main(int argc, char ** argv)
 {
