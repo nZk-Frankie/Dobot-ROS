@@ -3,6 +3,10 @@
 #include "ros/ros.h"
 #include "dobot/CartesianSimple.h"
 #include <cmath>
+#include "dobot/SetPTPCmd.h"
+#include "dobot/PTPCommand.h"
+
+
 class PTPCommandClient{
 	private:
 		ros::ServiceClient SetPTP_Client;
@@ -15,6 +19,15 @@ class PTPCommandClient{
 
 		void callback_ptp(const dobot::PTPCommand& msg)
 		{
+			dobot::SetPTPCmd::Request req;
+			req.ptpMode = msg.ptpMode;
+			req.x = msg.x;
+			req.y = msg.y;
+			req.z = msg.z;
+			req.r = msg.r;
+
+			dobot::setPTPCmd ptp{req};
+			SetPTP_Client.call(ptp);
 		}
 
 }
