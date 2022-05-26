@@ -7,33 +7,32 @@
 #include "dobot/PTPCommand.h"
 
 
-class PTPCommandClient{
+class PTPCommandClient
+{
 	private:
 		ros::ServiceClient SetPTP_Client;
-		ros::SetPTPCmd ptp;
+		dobot::SetPTPCmd ptp;
 		ros::Subscriber ptp_subs;
 	public:
-		PTPCommandClient(ros::NodeHandle &nh){
+		PTPCommandClient(ros::NodeHandle *nh)
+		{
 			SetPTP_Client = nh->serviceClient<dobot::SetPTPCmd>("/DobotServer/SetPTPCmd");
 			ptp_subs = nh->subscribe("/dobot/ptp_commands",10,&PTPCommandClient::callback_ptp,this);
-
-		void callback_ptp(const dobot::PTPCommand& msg)
-		{
-			dobot::SetPTPCmd::Request req;
-			req.ptpMode = msg.ptpMode;
-			req.x = msg.x;
-			req.y = msg.y;
-			req.z = msg.z;
-			req.r = msg.r;
-
-			dobot::setPTPCmd ptp{req};
-			SetPTP_Client.call(ptp);
 		}
 
-}
+			void callback_ptp(const dobot::PTPCommand& msg)
+			{
+				dobot::SetPTPCmd::Request req;
+				req.ptpMode = msg.ptpMode;
+				req.x = msg.x;
+				req.y = msg.y;
+				req.z = msg.z;
+				req.r = msg.r;
 
-			
-}
+				dobot::SetPTPCmd ptp{req};
+				SetPTP_Client.call(ptp);
+			}		
+};
 
 
 int main(int argc, char ** argv)
@@ -42,13 +41,13 @@ int main(int argc, char ** argv)
 	ros::init(argc,argv,"ptp_command_client");
 	ros::NodeHandle nh;
 
-	bool ptp_service_available = ros::service::waitForService("/DobotServer/SetPTPCmd",10000);\
+	bool ptp_service_available = ros::service::waitForService("/DobotServer/SetPTPCmd",10000);
 	if(ptp_service_available)
 	{
 		ROS_INFO("PTP_COMMAND: Connected to service /DobotServer/SetPTPCmd");
 
 		PTPCommandClient PTP_CLIENT = PTPCommandClient(&nh);
-		ros:Rate rate(5);
+		ros::Rate rate(5);
 		while (ros::ok())
 		{
 			ros::spin();

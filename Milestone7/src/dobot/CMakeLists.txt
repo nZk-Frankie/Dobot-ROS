@@ -53,6 +53,7 @@ find_package(catkin REQUIRED COMPONENTS
 add_message_files(
   FILES
   CartesianSimple.msg
+	PTPCommand.msg
 )
 
 ## Generate services in the 'srv' folder
@@ -255,7 +256,7 @@ add_executable(PosePublisher src/pose_publisher.cpp)
 target_link_libraries(PosePublisher ${catkin_LIBRARIES})
 add_dependencies(PosePublisher dobot_gencpp)
 
-add_executable(PTPCommandClient src/ptp_commad_client.cpp)
+add_executable(PTPCommandClient src/ptp_command_client.cpp)
 target_link_libraries(PTPCommandClient ${catkin_LIBRARIES})
 add_dependencies(PTPCommandClient dobot_gencpp)
 
