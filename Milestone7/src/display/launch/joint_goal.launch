@@ -1,0 +1,32 @@
+<launch>
+
+<node 
+	name="joint_goal_publisher"
+	pkg="display"
+	type="JointGoalPublisher"
+	args="/joint_states /dobot/goal_joints"
+	output="screen">
+	</node>
+	
+<node
+	name="dobot_server"
+	pkg="dobot"
+	type="DobotServer
+	args="/dev/ttyUSB1">
+</node>
+
+<node
+	name="Dobot_PTP_Client"
+	pkg="dobot"
+	type="PTPCommandClient"
+	>
+</node>
+
+<node
+	name="Dobot_PTP_listener"
+	pkg="dobot"
+	type="PTPGoalListener"
+	>
+</node>
+
+</launch>

@@ -1,0 +1,8 @@
+prefix=/home/choc/Desktop/Dobot ROS Files/Milestone7/devel
+
+Name: display
+Description: Description of display
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
